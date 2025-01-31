@@ -58,11 +58,11 @@ c = a&b
 print(c)
 
 #membership Operator
-z = "Hello world HELLO"
-count = 0
-y = 'H'
+# z = "Hello world HELLO"
+# count = 0
+# y = 'H'
 
-print("Hello" in a)
+# print("Hello" in a)
 
 
 
@@ -70,3 +70,10 @@ print("Hello" in a)
 a = 10
 b = 10
 print(a is b)
+
+
+# inline if else
+a = 100
+b = 20
+c = 30
+print(a if a > b else b if b > c else c if c > a else a)
