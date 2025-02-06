@@ -77,3 +77,33 @@ a = 100
 b = 20
 c = 30
 print(a if a > b else b if b > c else c if c > a else a)
+
+# q1 write a program to check prime number , perfect number , armstrong number ,fibonacci series
+#  all string operations append , reverse etc
+#  basic array operations reading the alternate arrays 
+#  reverse the array, list 
+# lc gcd and pascles traingle
+# 3, 4 patters (star)
+
+# Fibonacci series 
+def fibonacci(n):
+    fib_series = [0, 1]
+    for i in range(2, n):
+        fib_series.append(fib_series[-1] + fib_series[-2])
+    return fib_series[:n]
+
+n = int(input("Enter a number: "))
+print(fibonacci(n))
+
+# Prime number
+def prime(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+num = int(input("Enter a number: "))
+if prime(num):
+    print(num ,"is a prime number.")
+else:
+    print(num ," is not a prime number.")
