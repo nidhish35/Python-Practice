@@ -86,24 +86,22 @@ print(a if a > b else b if b > c else c if c > a else a)
 # 3, 4 patters (star)
 
 # Fibonacci series 
-def fibonacci(n):
-    fib_series = [0, 1]
-    for i in range(2, n):
-        fib_series.append(fib_series[-1] + fib_series[-2])
-    return fib_series[:n]
+# def fibonacci(n):
+#     fib_series = [0, 1]
+#     for i in range(2, n):
+#         fib_series.append(fib_series[-1] + fib_series[-2])
+#     return fib_series[:n]
 
-n = int(input("Enter a number: "))
-print(fibonacci(n))
+# n = int(input("Enter a number: "))
+# print(fibonacci(n))
 
 # Prime number
 def prime(n):
     for i in range(2, n):
         if n % i == 0:
-            return False
-    return True
+            return "Not Prime"
+    return "Prime"
 
-num = int(input("Enter a number: "))
-if prime(num):
-    print(num ,"is a prime number.")
-else:
-    print(num ," is not a prime number.")
+n = int(input("Enter a number: "))
+print(prime(n))
+
