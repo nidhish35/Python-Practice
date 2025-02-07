@@ -86,22 +86,103 @@ print(a if a > b else b if b > c else c if c > a else a)
 # 3, 4 patters (star)
 
 # Fibonacci series 
-# def fibonacci(n):
-#     fib_series = [0, 1]
-#     for i in range(2, n):
-#         fib_series.append(fib_series[-1] + fib_series[-2])
-#     return fib_series[:n]
+def fibo(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2, n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
 
-# n = int(input("Enter a number: "))
-# print(fibonacci(n))
+fibo(10)
 
-# Prime number
-def prime(n):
-    for i in range(2, n):
-        if n % i == 0:
-            return "Not Prime"
-    return "Prime"
+# # # Prime number
+# number = int(input("Enter the end of the range: "))
+# prime_numbers = []  # List to store prime numbers
 
-n = int(input("Enter a number: "))
-print(prime(n))
+# for num in range(1, number + 1):  # Start from 1 up to the given range
+#     if num > 1:  # Prime numbers start from 2
+#         for i in range(2, num):
+#             if num % i == 0:
+#                 break
+#         else:
+#             prime_numbers.append(num)  # Store prime numbers in the list
 
+# # print(prime_numbers)  # Print the list of prime numbers
+
+# # # Perfect number
+n = int (input("Enter the number: "))
+sum = 0
+for i in range(1, n):
+    if n % i == 0:
+        sum += i
+if sum == n:
+    print("Perfect number")
+else:
+    print("Not a perfect number")
+    
+# # # Armstrong number
+num = int(input("Enter the number: "))
+sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+if num == sum:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+
+# # pelindrome number
+num = int(input("Enter the number: "))
+temp = num
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+if temp == rev:
+    print("Pelindrome number")
+else:
+    print("Not a pelindrome number")
+
+# reverse the digit of number
+num = int(input("Enter the number: "))
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+print(rev)
+
+# star pattern
+for i in range(5):
+    for j in range(i+1):
+        print("*", end=" ")
+    print()
+
+# # star pattern 2
+for i in range(5):
+    for j in range(5-i):
+        print("*", end=" ")
+    print()
+
+# # star pattern 3
+for i in range(5):
+    for j in range(5-i):
+        print(" ", end=" ")
+    for k in range(i+1):
+        print("*", end=" ")
+    print()
+    
+# # String operations
+# string = "Hello World"
+# print(string[::-1])  # Reverse the string
+# print(string + " " + "Python")  # Append the string
