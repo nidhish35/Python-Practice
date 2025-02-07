@@ -103,18 +103,19 @@ def fibo(n):
 fibo(10)
 
 # # # Prime number
-# number = int(input("Enter the end of the range: "))
-# prime_numbers = []  # List to store prime numbers
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
-# for num in range(1, number + 1):  # Start from 1 up to the given range
-#     if num > 1:  # Prime numbers start from 2
-#         for i in range(2, num):
-#             if num % i == 0:
-#                 break
-#         else:
-#             prime_numbers.append(num)  # Store prime numbers in the list
+# Print prime numbers from 1 to 50
+for num in range(1, 51):
+    if is_prime(num):
+        print(num, end=" ")
 
-# # print(prime_numbers)  # Print the list of prime numbers
 
 # # # Perfect number
 n = int (input("Enter the number: "))
@@ -129,11 +130,12 @@ else:
     
 # # # Armstrong number
 num = int(input("Enter the number: "))
+length = len(str(num))
 sum = 0
 temp = num
 while temp > 0:
     digit = temp % 10
-    sum += digit ** 3
+    sum += digit ** length
     temp //= 10
 if num == sum:
     print("Armstrong number")
