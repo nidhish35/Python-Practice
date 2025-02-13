@@ -86,105 +86,128 @@ print(a if a > b else b if b > c else c if c > a else a)
 # 3, 4 patters (star)
 
 # Fibonacci series 
-def fibo(n):
-    a = 0
-    b = 1
-    if n == 1:
-        print(a)
-    else:
-        print(a)
-        print(b)
-        for i in range(2, n):
-            c = a + b
-            a = b
-            b = c
-            print(c)
+# def fibo(n):
+#     a = 0
+#     b = 1
+#     if n == 1:
+#         print(a)
+#     else:
+#         print(a)
+#         print(b)
+#         for i in range(2, n):
+#             c = a + b
+#             a = b
+#             b = c
+#             print(c)
 
-fibo(10)
+# fibo(10)
 
-# # # Prime number
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+# # # # Prime number
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
 
-# Print prime numbers from 1 to 50
-for num in range(1, 51):
-    if is_prime(num):
-        print(num, end=" ")
+# # Print prime numbers from 1 to 50
+# for num in range(1, 51):
+#     if is_prime(num):
+#         print(num, end=" ")
 
 
-# # # Perfect number
-n = int (input("Enter the number: "))
-sum = 0
-for i in range(1, n):
-    if n % i == 0:
-        sum += i
-if sum == n:
-    print("Perfect number")
-else:
-    print("Not a perfect number")
+# # # # Perfect number
+# n = int (input("Enter the number: "))
+# sum = 0
+# for i in range(1, n):
+#     if n % i == 0:
+#         sum += i
+# if sum == n:
+#     print("Perfect number")
+# else:
+#     print("Not a perfect number")
     
-# # # Armstrong number
-num = int(input("Enter the number: "))
-length = len(str(num))
-sum = 0
-temp = num
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** length
-    temp //= 10
-if num == sum:
-    print("Armstrong number")
-else:
-    print("Not an Armstrong number")
+# # # # Armstrong number
+# num = int(input("Enter the number: "))
+# length = len(str(num))
+# sum = 0
+# temp = num
+# while temp > 0:
+#     digit = temp % 10
+#     sum += digit ** length
+#     temp //= 10
+# if num == sum:
+#     print("Armstrong number")
+# else:
+#     print("Not an Armstrong number")
 
-# # pelindrome number
-num = int(input("Enter the number: "))
-temp = num
-rev = 0
-while num > 0:
-    digit = num % 10
-    rev = rev * 10 + digit
-    num //= 10
-if temp == rev:
-    print("Pelindrome number")
-else:
-    print("Not a pelindrome number")
+# # # pelindrome number
+# num = int(input("Enter the number: "))
+# temp = num
+# rev = 0
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num //= 10
+# if temp == rev:
+#     print("Pelindrome number")
+# else:
+#     print("Not a pelindrome number")
 
-# reverse the digit of number
-num = int(input("Enter the number: "))
-rev = 0
-while num > 0:
-    digit = num % 10
-    rev = rev * 10 + digit
-    num //= 10
-print(rev)
+# # reverse the digit of number
+# num = int(input("Enter the number: "))
+# rev = 0
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num //= 10
+# print(rev)
 
-# star pattern
-for i in range(5):
-    for j in range(i+1):
-        print("*", end=" ")
-    print()
+# # star pattern
+# for i in range(5):
+#     for j in range(i+1):
+#         print("*", end=" ")
+#     print()
 
-# # star pattern 2
-for i in range(5):
-    for j in range(5-i):
-        print("*", end=" ")
-    print()
+# # # star pattern 2
+# for i in range(5):
+#     for j in range(5-i):
+#         print("*", end=" ")
+#     print()
 
-# # star pattern 3
-for i in range(5):
-    for j in range(5-i):
-        print(" ", end=" ")
-    for k in range(i+1):
-        print("*", end=" ")
-    print()
+# # # star pattern 3
+# for i in range(5):
+#     for j in range(5-i):
+#         print(" ", end=" ")
+#     for k in range(i+1):
+#         print("*", end=" ")
+#     print()
     
 # # String operations
 # string = "Hello World"
 # print(string[::-1])  # Reverse the string
 # print(string + " " + "Python")  # Append the string
+
+# read function pointer
+
+# FUNCTIONS
+
+def wow():
+    print("wowowowo")
+
+wow()
+
+def wow2(a,b):
+    print(a+b)
+    
+wow2(2,3)
+
+
+def sum(a,b):
+    return a+b
+
+add = sum(5,5)
+print(add)
+
+# print("Addition of {1} & {0} = {2}".format(a,b,add))
