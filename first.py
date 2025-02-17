@@ -211,3 +211,12 @@ add = sum(5,5)
 print(add)
 
 # print("Addition of {1} & {0} = {2}".format(a,b,add))
+
+
+# Pointer / variable argument
+def show(*args):
+    print(args[3])
+    # for x in args:
+    # print(x)                  to read the whole list
+    
+show(101,"wow","ten",8.90)
