@@ -219,4 +219,4 @@ def show(*args):
     # for x in args:
     # print(x)                  to read the whole list
     
-show(101,"wow","ten",8.90)
+show(101,"wow","ten",8.90) 
