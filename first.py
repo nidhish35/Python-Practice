@@ -242,3 +242,7 @@ def revNum(num, add=""):
 # Call function and store result
 result = revNum(1234)
 print(result)  # Output: "4321"
+
+
+# reverse the string (do with recursion)
+# reverse the sentence (reverse each word at same place do with recursion)
