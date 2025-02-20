@@ -220,3 +220,25 @@ def show(*args):
     # print(x)                  to read the whole list
     
 show(101,"wow","ten",8.90) 
+
+
+def revNum(num):
+    if num > 0:
+        rem = num % 10
+        num = num // 10
+        print(rem, end ="")
+        revNum(num)
+        
+revNum(1234)
+
+def revNum(num, add=""):
+    if num > 0:
+        rem = num % 10
+        num = num // 10
+        add += str(rem)  # Store the digit
+        return revNum(num, add)  # Recursive call with updated string
+    return add  # Return the reversed number when recursion ends
+
+# Call function and store result
+result = revNum(1234)
+print(result)  # Output: "4321"
