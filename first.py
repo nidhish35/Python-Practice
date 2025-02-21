@@ -246,3 +246,30 @@ print(result)  # Output: "4321"
 
 # reverse the string (do with recursion)
 # reverse the sentence (reverse each word at same place do with recursion)
+
+# STRINGS
+# string builder , sting buffer IMPORTANT for Placement
+
+strvar = "mitwpu pune"
+print(strvar)
+print(type(strvar))
+print(strvar[5])
+print(len(strvar))
+
+for i in range(0,len(strvar),2):       #printing alternate 
+    print(strvar[i], end="")
+
+# no. of vowels count
+# print alternate chr
+# take input and find out the chr frequency (ex. how many times a in the string)
+
+for ch in strvar:
+    print(ch,end=' ' )
+    
+flag=1
+for ch in strvar:
+    if flag==1:
+        print(ch,end='')
+        flag=0
+    else:
+        flag=1
