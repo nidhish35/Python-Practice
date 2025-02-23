@@ -260,7 +260,19 @@ for i in range(0,len(strvar),2):       #printing alternate
     print(strvar[i], end="")
 
 # no. of vowels count
+str = "mitwpu pune"
+vowels = "aeiou"
+count = 0
+for ch in str:
+    if ch in vowels:
+        count += 1
+print(count)
 # print alternate chr
+str = "mitwpu pune"
+for i in range(0, len(str), 2):
+    print(str[i], end="")
+    
+
 # take input and find out the chr frequency (ex. how many times a in the string)
 
 for ch in strvar:
