@@ -285,3 +285,37 @@ for ch in strvar:
         flag=0
     else:
         flag=1
+#  String Slicing
+str = "Hello World"
+print(str[0:5])  # Output: Hello
+print(str[6:])  # Output: World
+print(str[:5])  # Output: Hello
+print(str[6])  # Output: W
+print(str[-5:])  # Output: World
+print(str[:-6])  # Output: Hello
+print(str[-5:-1])  # Output: Worl
+print(str[0:5:2])  # Output: Hlo
+print(str[::-1])  # Output: dlroW ol
+
+
+# Modules
+import math
+print(math.sqrt(16))
+print(math.pow(2, 3))
+print(math.pi)
+print(math.e)
+print(math.factorial(5))
+print(math.ceil(3.4))
+print(math.floor(3.4))
+print(math.gcd(12, 15))
+print(math.log(10))
+print(math.log10(10))
+print(math.log2(10))
+print(math.sin(90))
+print(math.cos(90))
+print(math.tan(90))
+print(math.degrees(math.pi))
+
+
+import calci
+print(calci.addsum(10, 20))
