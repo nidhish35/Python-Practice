@@ -299,23 +299,71 @@
 
 
 # Modules
-import math
-print(math.sqrt(16))
-print(math.pow(2, 3))
-print(math.pi)
-print(math.e)
-print(math.factorial(5))
-print(math.ceil(3.4))
-print(math.floor(3.4))
-print(math.gcd(12, 15))
-print(math.log(10))
-print(math.log10(10))
-print(math.log2(10))
-print(math.sin(90))
-print(math.cos(90))
-print(math.tan(90))
-print(math.degrees(math.pi))
+# import math
+# print(math.sqrt(16))
+# print(math.pow(2, 3))
+# print(math.pi)
+# print(math.e)
+# print(math.factorial(5))
+# print(math.ceil(3.4))
+# print(math.floor(3.4))
+# print(math.gcd(12, 15))
+# print(math.log(10))
+# print(math.log10(10))
+# print(math.log2(10))
+# print(math.sin(90))
+# print(math.cos(90))
+# print(math.tan(90))
+# print(math.degrees(math.pi))
 
 
-import calci
-print(calci.addsum(10, 20))
+# import calci
+# print(calci.addsum(10, 20))
+
+# try, except, else, finally
+x = 100
+try:
+    print(x)
+except:
+    print("not found") 
+else :
+    x = x+1
+    print(x)
+finally:
+    print("done")
+    
+
+# error handling practice
+try:
+    x = 10
+    print(x) #NameError
+    
+    print(10/0) #ZeroDivisionError
+    
+    print("Hello") #IndentationError
+    
+    print(int("Hello")) #ValueError
+    
+    fp = open("file.txt") #FileNotFoundError
+    
+except NameError:
+    print("NameError occurred")
+
+except ZeroDivisionError:
+    print("ZeroDivisionError occurred")
+    
+except IndentationError:
+    print("IndentationError occurred")
+
+except ValueError:
+    print("ValueError occurred")
+
+except FileNotFoundError:
+    print("FileNotFoundError occurred")
+
+else:
+    print("No error occurred")
+
+finally:
+    print("Finally block executed")
+
