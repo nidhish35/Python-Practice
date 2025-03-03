@@ -321,16 +321,16 @@
 # print(calci.addsum(10, 20))
 
 # try, except, else, finally
-x = 100
-try:
-    print(x)
-except:
-    print("not found") 
-else :
-    x = x+1
-    print(x)
-finally:
-    print("done")
+# x = 100
+# try:
+#     print(x)
+# except:
+#     print("not found") 
+# else :
+#     x = x+1
+#     print(x)
+# finally:
+#     print("done")
     
 
 # error handling practice
