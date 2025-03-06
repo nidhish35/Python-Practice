@@ -367,3 +367,13 @@ else:
 finally:
     print("Finally block executed")
 
+
+# Assertion Error
+def check_positive(number):
+    assert number > 0, "Number must be positive"
+    print("Valid number!")
+
+try:
+    check_positive(-5)
+except AssertionError as e:
+    print(f"Assertion Error: {e}")
