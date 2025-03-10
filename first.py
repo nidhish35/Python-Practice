@@ -142,7 +142,7 @@
 # # else:
 # #     print("Not an Armstrong number")
 
-# # # # pelindrome number
+# # # # palindrome number
 # # num = int(input("Enter the number: "))
 # # temp = num
 # # rev = 0
@@ -156,12 +156,12 @@
 # #     print("Not a pelindrome number")
 
 # # # reverse the digit of number
-# # num = int(input("Enter the number: "))
+# # num = int(input("Enter the number: ")) 12345
 # # rev = 0
 # # while num > 0:
-# #     digit = num % 10
-# #     rev = rev * 10 + digit
-# #     num //= 10
+# #     digit = num % 10         5 4
+# #     rev = rev * 10 + digit      5 54
+# #     num //= 10                  1234 123
 # # print(rev)
 
 # # # star pattern
@@ -293,7 +293,7 @@
 # print(str[6])  # Output: W
 # print(str[-5:])  # Output: World
 # print(str[:-6])  # Output: Hello
-# print(str[-5:-1])  # Output: Worl
+# print(str[-5:-1])  # Output: World
 # print(str[0:5:2])  # Output: Hlo
 # print(str[::-1])  # Output: dlroW ol
 
@@ -377,3 +377,9 @@ try:
     check_positive(-5)
 except AssertionError as e:
     print(f"Assertion Error: {e}")
+
+
+
+str = "new"
+reverse = str[::-1]
+print(str == reverse)
