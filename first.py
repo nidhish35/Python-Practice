@@ -397,3 +397,6 @@ print(len(new))
 
 for i in range(len(new)):
     print(new[i])
+    
+
+# insert, append, remove, pop, clear, sort, reverse, copy
