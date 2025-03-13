@@ -334,52 +334,66 @@
     
 
 # error handling practice
-try:
-    x = 10
-    print(x) #NameError
+# try:
+#     x = 10
+#     print(x) #NameError
     
-    print(10/0) #ZeroDivisionError
+#     print(10/0) #ZeroDivisionError
     
-    print("Hello") #IndentationError
+#     print("Hello") #IndentationError
     
-    print(int("Hello")) #ValueError
+#     print(int("Hello")) #ValueError
     
-    fp = open("file.txt") #FileNotFoundError
+#     fp = open("file.txt") #FileNotFoundError
     
-except NameError:
-    print("NameError occurred")
+# except NameError:
+#     print("NameError occurred")
 
-except ZeroDivisionError:
-    print("ZeroDivisionError occurred")
+# except ZeroDivisionError:
+#     print("ZeroDivisionError occurred")
     
-except IndentationError:
-    print("IndentationError occurred")
+# except IndentationError:
+#     print("IndentationError occurred")
 
-except ValueError:
-    print("ValueError occurred")
+# except ValueError:
+#     print("ValueError occurred")
 
-except FileNotFoundError:
-    print("FileNotFoundError occurred")
+# except FileNotFoundError:
+#     print("FileNotFoundError occurred")
 
-else:
-    print("No error occurred")
+# else:
+#     print("No error occurred")
 
-finally:
-    print("Finally block executed")
-
-
-# Assertion Error
-def check_positive(number):
-    assert number > 0, "Number must be positive"
-    print("Valid number!")
-
-try:
-    check_positive(-5)
-except AssertionError as e:
-    print(f"Assertion Error: {e}")
+# finally:
+#     print("Finally block executed")
 
 
+# # Assertion Error
+# def check_positive(number):
+#     assert number > 0, "Number must be positive"
+#     print("Valid number!")
 
-str = "new"
-reverse = str[::-1]
-print(str == reverse)
+# try:
+#     check_positive(-5)
+# except AssertionError as e:
+#     print(f"Assertion Error: {e}")
+
+
+
+# str = "new"
+# reverse = str[::-1]
+# print(str == reverse)
+
+# LIST
+new1 = input("Enter the list: ")
+list = [new1]
+print(list)
+
+new = [101, "Amit", 20.5,]
+new[0] = 102
+print(new)
+
+print(len(new))
+
+for i in range(len(new)):
+    print(new[i])
