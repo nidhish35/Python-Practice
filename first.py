@@ -400,3 +400,35 @@ for i in range(len(new)):
     
 
 # insert, append, remove, pop, clear, sort, reverse, copy
+new.append("MIT")
+print(new)
+
+new.insert(1, "Pune")
+print(new)
+
+new.remove("Pune")
+print(new)
+
+new.pop(1)
+print(new)
+
+new.clear()
+print(new)
+
+new = [101, "Amit", 20.5,]
+new.sort()
+print(new)
+
+new.reverse()
+print(new)
+
+new1 = new.copy()
+print(new1)
+
+alist =["amit", 101, 89.90]
+alist.insert(2, "MCA")
+alist.insert(4,"Pune")
+alist.insert(8, "abc@home")
+alist.insert(-1, "xyz@home")
+print(alist)
+# # Tuple
