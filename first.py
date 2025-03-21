@@ -385,50 +385,50 @@
 # print(str == reverse)
 
 # LIST
-new1 = input("Enter the list: ")
-list = [new1]
-print(list)
+# new1 = input("Enter the list: ")
+# list = [new1]
+# print(list)
 
-new = [101, "Amit", 20.5,]
-new[0] = 102
-print(new)
+# new = [101, "Amit", 20.5,]
+# new[0] = 102
+# print(new)
 
-print(len(new))
+# print(len(new))
 
-for i in range(len(new)):
-    print(new[i])
+# for i in range(len(new)):
+#     print(new[i])
     
 
-# insert, append, remove, pop, clear, sort, reverse, copy
-new.append("MIT")
-print(new)
+# # insert, append, remove, pop, clear, sort, reverse, copy
+# new.append("MIT")
+# print(new)
 
-new.insert(1, "Pune")
-print(new)
+# new.insert(1, "Pune")
+# print(new)
 
-new.remove("Pune")
-print(new)
+# new.remove("Pune")
+# print(new)
 
-new.pop(1)
-print(new)
+# new.pop(1)
+# print(new)
 
-new.clear()
-print(new)
+# new.clear()
+# print(new)
 
-new = [101, "Amit", 20.5,]
-new.sort()
-print(new)
+# new = [101, "Amit", 20.5,]
+# new.sort()
+# print(new)
 
-new.reverse()
-print(new)
+# new.reverse()
+# print(new)
 
-new1 = new.copy()
-print(new1)
+# new1 = new.copy()
+# print(new1)
 
-alist =["amit", 101, 89.90]
-alist.insert(2, "MCA")
-alist.insert(4,"Pune")
-alist.insert(8, "abc@home")
-alist.insert(-1, "xyz@home")
-print(alist)
+# alist =["amit", 101, 89.90]
+# alist.insert(2, "MCA")
+# alist.insert(4,"Pune")
+# alist.insert(8, "abc@home")
+# alist.insert(-1, "xyz@home")
+# print(alist)
 # # Tuple
