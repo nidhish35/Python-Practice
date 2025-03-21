@@ -431,4 +431,27 @@
 # alist.insert(8, "abc@home")
 # alist.insert(-1, "xyz@home")
 # print(alist)
+
 # # Tuple
+tuple = (101, "Amit", 20.5)
+print(tuple)
+print(type(tuple))
+
+
+temp = 100,"MIT",90.88
+print(type(temp))
+
+for i in range(0,len(tuple)):
+    print(tuple[i], end=" ")
+    
+tvar = (101,"ajay", "MIT", "MCA", 89.89)
+name = "Amit"
+# tvar[1] = name
+print(tvar)
+
+
+# add
+tvar1 = (101, "ajay")
+tvar2 = (101,20)
+tvar1 = tvar1+tvar2
+print(tvar1)
