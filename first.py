@@ -455,3 +455,7 @@ tvar1 = (101, "ajay")
 tvar2 = (101,20)
 tvar1 = tvar1+tvar2
 print(tvar1)
+
+# SET DEMO (sort the numeric data in ascending order and shuffle the strings)
+sobj={1,2,4,5, "amit", "ajay", "omkar", "rajesh"}
+print("Set: ", sobj)
