@@ -459,3 +459,6 @@ print(tvar1)
 # SET DEMO (sort the numeric data in ascending order and shuffle the strings)
 sobj={1,2,4,5, "amit", "ajay", "omkar", "rajesh"}
 print("Set: ", sobj)
+
+# in set print the 2nd part of a string 
+sobj = {"amit kumar", "ajay", "omkar", "rajesh"} # in this case i want to print only kumar 
