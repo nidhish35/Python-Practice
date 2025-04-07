@@ -432,33 +432,57 @@
 # alist.insert(-1, "xyz@home")
 # print(alist)
 
-# # Tuple
-tuple = (101, "Amit", 20.5)
-print(tuple)
-print(type(tuple))
+# # # Tuple
+# tuple = (101, "Amit", 20.5)
+# print(tuple)
+# print(type(tuple))
 
 
-temp = 100,"MIT",90.88
-print(type(temp))
+# temp = 100,"MIT",90.88
+# print(type(temp))
 
-for i in range(0,len(tuple)):
-    print(tuple[i], end=" ")
+# for i in range(0,len(tuple)):
+#     print(tuple[i], end=" ")
     
-tvar = (101,"ajay", "MIT", "MCA", 89.89)
-name = "Amit"
-# tvar[1] = name
-print(tvar)
+# tvar = (101,"ajay", "MIT", "MCA", 89.89)
+# name = "Amit"
+# # tvar[1] = name
+# print(tvar)
 
 
-# add
-tvar1 = (101, "ajay")
-tvar2 = (101,20)
-tvar1 = tvar1+tvar2
-print(tvar1)
+# # add
+# tvar1 = (101, "ajay")
+# tvar2 = (101,20)
+# tvar1 = tvar1+tvar2
+# print(tvar1)
 
-# SET DEMO (sort the numeric data in ascending order and shuffle the strings)
-sobj={1,2,4,5, "amit", "ajay", "omkar", "rajesh"}
-print("Set: ", sobj)
+# # SET DEMO (sort the numeric data in ascending order and shuffle the strings)
+# sobj={1,2,4,5, "amit", "ajay", "omkar", "rajesh"}
+# print("Set: ", sobj)
 
-# in set print the 2nd part of a string 
-sobj = {"amit kumar", "ajay", "omkar", "rajesh"} # in this case i want to print only kumar 
+# # in set print the 2nd part of a string 
+# sobj = {"amit kumar", "ajay", "omkar", "rajesh"} # in this case i want to print only kumar 
+
+set1 =  {1,2,3,4}
+alist = ["a","b","c","d",1,2,3,]
+strvar = "my name is xyz"
+tupvar = ("ABCD",) # when u apply , it becomes tuple if not then it will be treated as string
+temp = tupvar[0]
+# set1.update(alist)
+set1.update(alist)
+new =set(set1)
+
+# print(new)
+# count=0
+# print("SET 1 : ",set1," Len : ",len(set1))
+
+# for var in new:
+#     if var in "":
+#         count = count+1
+#         print(count)
+        
+        
+        
+# dictionary
+dictvar = {"name" : "amit", "program": "MCA","per" : 89.90,"city" : "Pune", "name" : "rajesh"}  # it overrides the last name value
+print(dictvar)
