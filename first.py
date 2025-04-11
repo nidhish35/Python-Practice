@@ -486,3 +486,10 @@ new =set(set1)
 # dictionary
 dictvar = {"name" : "amit", "program": "MCA","per" : 89.90,"city" : "Pune", "name" : "rajesh"}  # it overrides the last name value
 print(dictvar)
+
+newdict = {101: {"name": "Amit", "program": "MCA", "per": 89.90, "city": "Pune"},
+        102: {"name": "Ajay", "program": "MCA", "per": 90.00, "city": "Mumbai"},
+        103: {"name": "Omkar", "program": "MCA", "per": 85.50, "city": "Nashik"}}
+print(newdict[101]["name"])
+print(newdict[102]["program"])
+print(newdict[103]["per"])
