@@ -493,3 +493,15 @@ newdict = {101: {"name": "Amit", "program": "MCA", "per": 89.90, "city": "Pune"}
 print(newdict[101]["name"])
 print(newdict[102]["program"])
 print(newdict[103]["per"])
+
+
+# OBJECT ORIENTED PYTHON PROGRAMMING
+
+
+# important topics
+
+# dictionary to list 
+# string
+# file handling
+# class 
+# one theory
