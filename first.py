@@ -5,10 +5,10 @@
 # h=e+f
 # print(c,h)
 
-# #you can assign single value to multiple value
+# you can assign single value to multiple value
 
 
-# #pack and unpack
+# pack and unpack
 # c=10,20
 # a,b=c
 # print(a,b)
@@ -463,14 +463,14 @@
 # # in set print the 2nd part of a string 
 # sobj = {"amit kumar", "ajay", "omkar", "rajesh"} # in this case i want to print only kumar 
 
-set1 =  {1,2,3,4}
-alist = ["a","b","c","d",1,2,3,]
-strvar = "my name is xyz"
-tupvar = ("ABCD",) # when u apply , it becomes tuple if not then it will be treated as string
-temp = tupvar[0]
+# set1 =  {1,2,3,4}
+# alist = ["a","b","c","d",1,2,3,]
+# strvar = "my name is xyz"
+# tupvar = ("ABCD",) # when u apply , it becomes tuple if not then it will be treated as string
+# temp = tupvar[0]
+# # set1.update(alist)
 # set1.update(alist)
-set1.update(alist)
-new =set(set1)
+# new =set(set1)
 
 # print(new)
 # count=0
@@ -484,15 +484,15 @@ new =set(set1)
         
         
 # dictionary
-dictvar = {"name" : "amit", "program": "MCA","per" : 89.90,"city" : "Pune", "name" : "rajesh"}  # it overrides the last name value
-print(dictvar)
+# dictvar = {"name" : "amit", "program": "MCA","per" : 89.90,"city" : "Pune", "name" : "rajesh"}  # it overrides the last name value
+# print(dictvar)
 
-newdict = {101: {"name": "Amit", "program": "MCA", "per": 89.90, "city": "Pune"},
-        102: {"name": "Ajay", "program": "MCA", "per": 90.00, "city": "Mumbai"},
-        103: {"name": "Omkar", "program": "MCA", "per": 85.50, "city": "Nashik"}}
-print(newdict[101]["name"])
-print(newdict[102]["program"])
-print(newdict[103]["per"])
+# newdict = {101: {"name": "Amit", "program": "MCA", "per": 89.90, "city": "Pune"},
+#         102: {"name": "Ajay", "program": "MCA", "per": 90.00, "city": "Mumbai"},
+#         103: {"name": "Omkar", "program": "MCA", "per": 85.50, "city": "Nashik"}}
+# print(newdict[101]["name"])
+# print(newdict[102]["program"])
+# print(newdict[103]["per"])
 
 
 # OBJECT ORIENTED PYTHON PROGRAMMING
@@ -505,3 +505,4 @@ print(newdict[103]["per"])
 # file handling
 # class 
 # one theory
+
